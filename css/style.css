@@ -1,0 +1,153 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    /* scroll-behavior: smooth; */
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/******************** HEADER ***********************************/
+
+/****** NAVBAR *****/
+
+.navBar{
+    width: 100%;
+    background-color: rgba(68, 68, 70, 1);
+    border: solid 5px rgba(68, 68, 70, 1);
+    color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    
+}
+.navBar__logo--afpa{
+    width: 10%;
+    border-radius: 10px;
+}
+.navBar--ancre{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.navBar--ancre a{
+    color: white;
+}
+
+
+/********************* MAIN ****************************/
+main{
+    margin-top: 5%;
+    margin-bottom: 7%;
+    display: flex;
+
+}
+
+/***** Section *******/
+article{
+    width: 75%;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section--bloc{
+    width: 70%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: solid 1px rgba(99, 6, 6, 0.534);
+    border-radius: 10px;
+    text-align: center;
+}
+h1{
+    text-align: start;
+    padding: 2% 10%;
+}
+
+
+
+/***** Aside ******/
+
+aside{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(68, 68, 70, 1);
+    position: fixed;
+    right: 0;    
+    
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.aside--bloc{
+    width: 80%;
+    margin-top: 15%;
+    border: solid 3px black;
+    border-top-right-radius: 20px;
+}
+
+.aside__bloc--nav a{
+    color: white;
+}
+
+.aside__bloc--form{
+    color: white;
+}
+
+
+/********************** FOOTER ****************************/
+
+footer{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+}
+
+
+.footer--logo{
+    width: 10%;
+    height: 100%;
+    right: 0;
+}
+
+.footer--container{
+    margin-left: 50%;
+    transform: translateX(-100%);
+}
+
+.footer__container--lien{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer__container--lien a{
+    color: black;
+}
+
+.footer__container--copyright{
+    padding-top: 20px;
+}
+
+::-webkit-scrollbar-corner{
+    margin-left: 500px;
+}
