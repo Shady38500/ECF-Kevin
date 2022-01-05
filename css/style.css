@@ -108,8 +108,9 @@ aside{
 
 footer{
     width: 100%;
+    height: 80px;
     background-color: #fff;
-    padding-top: 3%;
+    padding-top: 1%;
     padding-bottom: 1%;
     display: flex;
     justify-content: center;
@@ -121,7 +122,6 @@ footer{
 
 .footer--logo{
     width: 10%;
-    height: 100%;
 }
 
 .footer__container--lien{
