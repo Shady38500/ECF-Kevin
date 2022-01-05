@@ -5,6 +5,7 @@ let bloc = document.querySelectorAll('.section--bloc')
 
         bloc.style.backgroundColor="black";
         bloc.style.color="white";
+        bloc.style.transition="1s"
     });
     
     bloc.addEventListener('mouseout', () =>{
@@ -12,15 +13,21 @@ let bloc = document.querySelectorAll('.section--bloc')
         bloc.style.backgroundColor="white";
         bloc.style.color="black";
     });
+
+    
+    
 });
 
-let ancre = document.querySelectorAll('a')
 
-.forEach(ancre => {
-    ancre.addEventListener('click', () => {
-        
-        window.scroll(1000,2000)
-    });
-});
+
+
+
+
+
+
+
+
+
+
 
 
