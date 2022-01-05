@@ -1,17 +1,17 @@
-let bloc = document.querySelectorAll('.section--bloc')
+let article = document.querySelectorAll('.section--bloc')
 
-.forEach(bloc => {
-    bloc.addEventListener('mouseover', () => {
+.forEach(article => {
+    article.addEventListener('mouseover', () => {
 
-        bloc.style.backgroundColor="black";
-        bloc.style.color="white";
-        bloc.style.transition="1s"
+    article.style.backgroundColor="black";
+    article.style.color="white";
+    article.style.transition="1s"
     });
     
-    bloc.addEventListener('mouseout', () =>{
+    article.addEventListener('mouseout', () =>{
 
-        bloc.style.backgroundColor="white";
-        bloc.style.color="black";
+        article.style.backgroundColor="white";
+        article.style.color="black";
     });
 
     
