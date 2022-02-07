@@ -87,14 +87,24 @@
                 </div>
                 
                 <div class="aside--bloc">
-                    <form class="aside__bloc--form" action="">
-                        <div>
-                            <label for="email">Envoyer un email<br></label>
-                            <input type="email" name="email" id="email" required>
-                            <button><a href="mailto: Alampi.kevin@gmail.com?">Envoyer</a></button>
-                            
-                            
-                        </div>
+                    <form class="aside__bloc--form" method="post" action="">
+                        <table>
+                            <th>Inscription</th>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><input type="email" name="email" placeholder="Ex: email@omg.fr" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Mot de passe</td>
+                                    <td><input type="password" name= "password" placeholder="Ex: *******" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Confirmer Mot de passe</td>
+                                    <td><input type="password" name="password_conf" placeholder="Ex: *******" required></td>
+                                </tr>
+                        </table>
+
+                        <button id="inscription" type ="submit">Inscription</button>
                     </form>
                 </div>
             </div>

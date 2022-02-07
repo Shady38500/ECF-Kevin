@@ -66,7 +66,7 @@
                 </div>
                 
                 <div class="aside--bloc">
-                    <form class="aside__bloc--form" method=post action="">
+                    <form class="aside__bloc--form" method="post" action="">
                         <table>
                             <th>Inscription</th>
                                 <tr>
