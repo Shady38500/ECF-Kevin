@@ -101,9 +101,19 @@ aside{
 }
 
 .aside__bloc--form{
-    height: 100px;
-    padding: 20px;
+    /* height: 100px; */
+    padding: 10px;
     color: white;
+}
+
+input{
+    margin: 10px;
+    padding: 10px;
+}
+#inscription {
+    width: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 footer{
@@ -115,8 +125,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    bottom: 0;
+    /* position: sticky; */
+    /* bottom: 0; */
 }
 
 

@@ -9,5 +9,5 @@
             <p class="footer__container--copyright">© Copyright ECF Alampi Kevin 2022</p>
         </div>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
