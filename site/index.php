@@ -1,11 +1,13 @@
 <?php 
-    require('./modele/connectionDb.php');
+// TRAITEMENT
+    require('./modele/modeleUtilisateur.php');
 
-    $requete = connectionPdo();
+// AFFICHAGE
+    require('./views/vueAccueil.php');
+
+
 
     
     
-    // include "./views/header.html.php";
-    // include "./views/main.html.php";
-    // include "./views/footer.html.php";
+
 
