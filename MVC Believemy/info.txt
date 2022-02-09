@@ -1,0 +1,3 @@
+le CONTROLLER sert a relier le model avec la vue
+
+le try catch d'index.php permet d'afficher les erreurs eventuel de toute nos differents pages !
