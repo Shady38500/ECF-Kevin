@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>ECF Alampi Kevin</title>
+    <link rel="stylesheet" href="site/public/css/style.css">
+    <title><?=$title ?> | Ecf => Mvc</title>
 </head>
 <body>
-    <header>
+<header>
         <nav class="navBar">
-            <img class="navBar__logo--afpa" src="image/layout_set_logo.png" alt="logo Afpa">
+            <img class="navBar__logo--afpa" src="site/public/Image/layout_set_logo.png" alt="logo Afpa">
             <ul class="navBar--ancre">
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#">Page 1</a></li>
@@ -87,32 +87,15 @@
                 </div>
                 
                 <div class="aside--bloc">
-                    <form class="aside__bloc--form" method="post" action="">
-                        <table>
-                            <th>Inscription</th>
-                                <tr>
-                                    <td>Email</td>
-                                    <td><input type="email" name="email" placeholder="Ex: email@omg.fr" required></td>
-                                </tr>
-                                <tr>
-                                    <td>Mot de passe</td>
-                                    <td><input type="password" name= "password" placeholder="Ex: *******" required></td>
-                                </tr>
-                                <tr>
-                                    <td>Confirmer Mot de passe</td>
-                                    <td><input type="password" name="password_conf" placeholder="Ex: *******" required></td>
-                                </tr>
-                        </table>
-
-                        <button id="inscription" type ="submit">Inscription</button>
-                    </form>
+                    <?= $content ?>
                 </div>
+                
             </div>
             
         </aside>
     </main>
     <footer class="footer">
-        <img class="footer--logo" src="image/layout_set_logo.png" alt="logo Afpa">
+        <img class="footer--logo" src="site/public/Image/layout_set_logo.png" alt="logo Afpa">
             
         <div class="footer--container">
             <ul class="footer__container--lien">
@@ -122,6 +105,8 @@
             <p class="footer__container--copyright">© Copyright ECF Alampi Kevin 2022</p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="site/public/js/script.js"></script>
+</body>
+</html>
 </body>
 </html>
