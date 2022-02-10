@@ -1,17 +1,10 @@
 <?php
 
-require('./site/model/connexionModel.php');
-require('./site/model/inscriptionModel.php');
+require('./site/model/modelUtilisateur.php');
 
 function accueil() {
-
-    $requete = connexion();
-
-    require('./site/views/connexionView.php');
-}
-
-function inscription() {
-
-    $requete = getInscription();
+    
+    $requete = inscription();
     require('./site/views/inscriptionView.php');
 }
+

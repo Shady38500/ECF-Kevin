@@ -22,6 +22,7 @@
     <main>
         <article>
             <section class="section">
+                
                 <article class="section--bloc">
                     <div class="section__bloc--1" id="bloc1">
                         <h1>Article 1</h1>

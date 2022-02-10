@@ -2,32 +2,30 @@
 
 
 
-// require('./site/views/base.php'); // temporaire
+
 
 require('site/controllers/controller.php');
+
 // ROUTEUR
 
 try {
 
-    if(isset($_GET['page'])) { /* Si il existe page dans l'URL*/
+    if(isset($_GET['success'])) { 
 
-        if($_GET['page'] == 'accueil') {
+        inscription();
+        require('./site/views/connexionView.php');
 
+        
+    }
 
-            accueil();
+    else if(isset($_GET['gg'])) {
 
-        } 
-        else if($_GET['page'] == 'inscription') {
-
-            inscription();
-            header('location: inscriptionView/?page=accueil');
-
-        } 
-        else {
-            throw new Exception("Cette page n'existe pas ou a été supprimée.");
+            connection();
+            require('./site/views/articleView.php');
         }
 
-    } 
+   
+    
     else {
 
         accueil();
