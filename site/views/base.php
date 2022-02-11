@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="site/public/css/style.css">
-    <title><?=$title ?> | Ecf => Mvc</title>
+    <title> <?= $title ?>| Ecf => Mvc</title>
 </head>
 <body>
 <header>

@@ -23,37 +23,61 @@
             
             $req->execute(array($pseudo, $email, $mdp, $mdpc));
             header('location: ./?success');
+
             exit;
-            return $req;
+            
+            ;
         }
+        
+        
     }
 
+    
 
     function connection() {
 
+        try{
+            if(!empty($_POST['email']) && !empty($_POST['mdp'])) {
 
-        if(!empty($_POST['email']) && !empty($_POST['mdp'])) {
-
-            $db = connexionDb();
-            // VARIABLES
-            $email  = $_POST['email'];
-            $mdp    = $_POST['mdp'];
-            echo $email;
-            $req = $db->prepare('SELECT * 
-                                 FROM users
-                                 WHERE email=?')or die(print_r($db->errorInfo()));
-            $req->execute(array($email));
-
-            while($user = $req->fetch()) {
-
-                if($mdp == $user['mdp']) {
-
-                    header('location: ./?gg');
-                    exit;
+                $db = connexionDb();
+                // VARIABLES
+                $email  = $_POST['email'];
+                $mdp    = $_POST['mdp'];
+                $req = $db->prepare('SELECT * 
+                                    FROM users
+                                    WHERE email=?')or die(print_r($db->errorInfo()));
+                $req->execute(array($email));
+                
+                echo $email;
+                while($user = $req->fetch()) {
+                    if($mdp != $user['mdp']) {
+                        
+                        
+                        header('location: ./?error');
+                        
+                        
+                        
+                    }
+                    
+                    
                 }
+                
+                header('location: ./?gg');
             }
-            return $req;
+        }
+        catch(Exception $e){
+            die('Erreur : ' . $e->getMessage());
+
         }
     }
+
+    function article() {
+
+
+
+    }
+            
+
+            
 
     

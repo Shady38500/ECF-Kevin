@@ -6,26 +6,26 @@
 
 require('site/controllers/controller.php');
 
+
 // ROUTEUR
 
 try {
 
     if(isset($_GET['success'])) { 
 
-        inscription();
+        
+        connection();
         require('./site/views/connexionView.php');
-
+        
+        
+        
         
     }
-
-    else if(isset($_GET['gg'])) {
-
-            connection();
+    if(isset($_GET['gg'])) {
+            article();
             require('./site/views/articleView.php');
+            
         }
-
-   
-    
     else {
 
         accueil();
