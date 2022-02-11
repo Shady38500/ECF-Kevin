@@ -15,7 +15,7 @@ function connect(){
 
 // function article() {
 
-//     $requete = article();
+//     $requete = article(); pas forcement besoin de faire quelque chose ici a voir !
 //     // require('./site/views/aticleView.php');
 // }
 

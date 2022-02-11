@@ -73,7 +73,7 @@
 
     function article() {
 
-
+        // envoyer article dans la bdd et pouvoir l'afficher du plus ressent au plus ancien !
 
     }
             
