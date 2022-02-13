@@ -22,11 +22,11 @@
             $req = $db->prepare('INSERT INTO users(pseudo, email, mdp, mdpc)VALUES (?, ?, ?, ?)') or die(print_r($db->errorInfo()));
             
             $req->execute(array($pseudo, $email, $mdp, $mdpc));
+            
             header('location: ./?success');
-
             exit;
             
-            ;
+            
         }
         
         
@@ -71,10 +71,11 @@
         }
     }
 
-    function article() {
+    function editArticle() {
 
         // envoyer article dans la bdd et pouvoir l'afficher du plus ressent au plus ancien !
 
+        
     }
             
 

@@ -8,26 +8,24 @@ require('site/controllers/controller.php');
 
 
 // ROUTEUR
+// include_once('./site/views/base.php');
 
 try {
+    
+    
 
     if(isset($_GET['success'])) { 
-
         
-        connection();
-        require('./site/views/connexionView.php');
-        
-        
-        
-        
+        connect();
     }
+    
     if(isset($_GET['gg'])) {
-            article();
-            require('./site/views/articleView.php');
-            
-        }
+        
+        article();    
+    }
+    
     else {
-
+        
         accueil();
     }
 } 
