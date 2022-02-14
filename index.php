@@ -8,7 +8,7 @@ require('site/controllers/controller.php');
 
 
 // ROUTEUR
-// include_once('./site/views/base.php');
+
 
 try {
     
@@ -16,18 +16,28 @@ try {
 
     if(isset($_GET['success'])) { 
         
+        
         connect();
+        
     }
-    
-    if(isset($_GET['gg'])) {
+    else if(isset($_GET['gg'])) {
         
         article();    
     }
-    
+    else if(isset($_GET['publie'])) {
+        
+        article();
+       
+    }
     else {
         
         accueil();
+        
+        
     }
+    
+    
+    
 } 
 catch(Exception $e) {
 

@@ -1,10 +1,12 @@
 <?php 
     $title = 'Accueil';
     ob_start();
+        
 ?>
+         
+            
 
-
-    <form methode="post" action="">
+    <form method="post" action="">
         <table>
             <th>Poster un article</th>
             <tr>
@@ -16,11 +18,11 @@
                 <td><input type="text" name="article" placeholder="Ex: Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error temporibus natus molestiae veritatis ducimus?" ></td>
             </tr>
         </table>
-        <button type="submit">Envoyer</button>
+        <button>Envoyer</button>
     </form>
 
 <?php 
-
+        
     $content= ob_get_clean();
     require('base.php');
 

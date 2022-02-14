@@ -23,6 +23,7 @@
             
             $req->execute(array($pseudo, $email, $mdp, $mdpc));
             
+            
             header('location: ./?success');
             exit;
             
@@ -48,7 +49,7 @@
                                     WHERE email=?')or die(print_r($db->errorInfo()));
                 $req->execute(array($email));
                 
-                echo $email;
+                
                 while($user = $req->fetch()) {
                     if($mdp != $user['mdp']) {
                         
@@ -63,6 +64,7 @@
                 }
                 
                 header('location: ./?gg');
+                exit;
             }
         }
         catch(Exception $e){
@@ -71,13 +73,9 @@
         }
     }
 
-    function editArticle() {
 
-        // envoyer article dans la bdd et pouvoir l'afficher du plus ressent au plus ancien !
 
-        
-    }
-            
+         
 
             
 
