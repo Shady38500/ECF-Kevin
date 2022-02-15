@@ -7,7 +7,7 @@
 require('site/controllers/controller.php');
 
 
-// ROUTEUR
+
 
 
 try {
@@ -31,6 +31,7 @@ try {
     }
     else {
         
+         
         accueil();
         
         

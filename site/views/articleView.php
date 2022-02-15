@@ -1,30 +1,18 @@
-<?php 
-    $title = 'Accueil';
-    ob_start();
-        
-?>
-         
-            
+<?php ob_start(); ?>
 
-    <form method="post" action="">
-        <table>
-            <th>Poster un article</th>
-            <tr>
-                <td>Titre</td>
-                <td><input type="text" name="titre" placeholder="Ex: le titre de mon article"></td>
-            </tr>
-            <tr>
-                <td>Article</td>
-                <td><input type="text" name="article" placeholder="Ex: Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error temporibus natus molestiae veritatis ducimus?" ></td>
-            </tr>
-        </table>
-        <button>Envoyer</button>
-    </form>
 
 <?php 
-        
-    $content= ob_get_clean();
-    require('base.php');
+        while($article = $aff->fetch()) { ?>
 
-?>
+    <article class="section--bloc">
+        <div class="section__bloc--1">
+            <h1><?= $article['titre'] ?></h1>
+            <p><?= $article['article']?></p>
+            <p><?= $article['create_date']?></p>
 
+        </div>
+    </article>
+<?php } ?>
+
+
+<?php $newArticle = ob_get_clean(); ?>

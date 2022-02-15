@@ -1,7 +1,5 @@
 <?php
 
-// include('modelUtilisateur.php');
-
 
 function editArticle() {
 
@@ -11,8 +9,8 @@ function editArticle() {
         
         if(!empty($_POST['titre']) && !empty($_POST['article'])) {
             
-            $titre = $_POST['titre'];
-            $article = $_POST['article'];
+            $titre      = $_POST['titre'];
+            $article    = $_POST['article'];
 
             $req = $db->prepare('INSERT INTO article(titre, article) VALUES(?, ?)') or die(print_r($db->errorInfo()));
             $req->execute(array($titre, $article));
@@ -33,17 +31,17 @@ function editArticle() {
 }
 
 
-// function affArticle() {
+function affArticle() {
 
-//     try {
+    try {
 
-//         $db = connexionDb();
-//         $req = $db->query('SELECT * FROM article ORDER BY id DESC');
-//         return $req;
+        $db = connexionDb();
+        $req = $db->query('SELECT * FROM article ORDER BY id DESC');
         
         
-//     }
-//     catch(Exception $e) {
-//         die('Erreur : ' . $e->getMessage());
-//     }
-// }
+    }
+    catch(Exception $e) {
+        die('Erreur : ' . $e->getMessage());
+    }
+    return $req;
+}
